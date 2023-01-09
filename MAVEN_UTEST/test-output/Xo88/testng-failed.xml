@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Xo88]">
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="commons.ReportNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Run on Chrome(failed)">
+    <parameter name="browser" value="chrome_ui"/>
+    <classes>
+      <class name="com.xo88.info.homepage_with_xo88">
+        <methods>
+          <include name="deleteAllFilesInReportNGScreenshot"/>
+          <include name="beforeClass"/>
+          <include name="TC_02_Check_Logout"/>
+        </methods>
+      </class> <!-- com.xo88.info.homepage_with_xo88 -->
+    </classes>
+  </test> <!-- Run on Chrome(failed) -->
+</suite> <!-- Failed suite [Xo88] -->

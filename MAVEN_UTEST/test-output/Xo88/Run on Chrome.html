@@ -1,0 +1,278 @@
+<html>
+<head>
+<title>TestNG:  Run on Chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Run on Chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 04 14:42:49 ICT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>22 seconds (22918 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.xo88.info.homepage_with_xo88.TC_02_Check_Logout()'><b>TC_02_Check_Logout</b><br>Test class: com.xo88.info.homepage_with_xo88<br/>
+<a href="#Output-1745014819" onClick='toggleBox("Output-1745014819", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1745014819" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1745014819">
+[INFO ] [2023-01-04 14:43:11,016] TC_02_Check_Logout - Step 01: Click to Avatar Account
+<br><br/>
+<br><a target="_blank" href="file:///D:\Selenium\Automation_G3-master\ReportNGScreenShots\TC_02_Check_Logout_04_01_2023_02_43_12.png"><img src="file:///D:\Selenium\Automation_G3-master\ReportNGScreenShots\TC_02_Check_Logout_04_01_2023_02_43_12.png" height='100' width='150'/> </a></br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div data-v-fc342b5e=&quot;&quot; class=&quot;wrapper-user-login__right--name&quot;&gt;...&lt;/div&gt; is not clickable at point (1409, 41). Other element would receive the click: &lt;div id=&quot;modalUpdateFullName&quot; role=&quot;dialog&quot; aria-describedby=&quot;modalUpdateFullName___BV_modal_body_&quot; class=&quot;modal fade show modal-update-fullname&quot; aria-modal=&quot;true&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=108.0.5359.125)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1BLPAMA&apos;, ip: &apos;192.168.1.13&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 01b70e793cf02179b1768c63a024680a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at commons.AbstractPage.clickToElement(AbstractPage.java:120)
+	at pageObjects.xo88_HomePageObject.clickToAvatarAccount(xo88_HomePageObject.java:140)
+	at com.xo88.info.homepage_with_xo88.TC_02_Check_Logout(homepage_with_xo88.java:171)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1745014819", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1745014819'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div data-v-fc342b5e=&quot;&quot; class=&quot;wrapper-user-login__right--name&quot;&gt;...&lt;/div&gt; is not clickable at point (1409, 41). Other element would receive the click: &lt;div id=&quot;modalUpdateFullName&quot; role=&quot;dialog&quot; aria-describedby=&quot;modalUpdateFullName___BV_modal_body_&quot; class=&quot;modal fade show modal-update-fullname&quot; aria-modal=&quot;true&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=108.0.5359.125)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1BLPAMA&apos;, ip: &apos;192.168.1.13&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 01b70e793cf02179b1768c63a024680a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at commons.AbstractPage.clickToElement(AbstractPage.java:120)
+	at pageObjects.xo88_HomePageObject.clickToAvatarAccount(xo88_HomePageObject.java:140)
+	at com.xo88.info.homepage_with_xo88.TC_02_Check_Logout(homepage_with_xo88.java:171)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.xo88.info.homepage_with_xo88@45f421c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.xo88.info.homepage_with_xo88.TC_01_Check_Register_And_Login()'><b>TC_01_Check_Register_And_Login</b><br>Test class: com.xo88.info.homepage_with_xo88<br/>
+<a href="#Output-190182839" onClick='toggleBox("Output-190182839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-190182839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-190182839">
+[INFO ] [2023-01-04 14:42:59,198] TC_01_Loggin - Step 01: Click to Register
+<br><br/>
+[INFO ] [2023-01-04 14:43:00,388] TC_01_Loggin - Step 02: Click to Login
+<br><br/>
+[INFO ] [2023-01-04 14:43:01,534] TC_01_Loggin - Step 03: Click to Button Register
+<br><br/>
+[INFO ] [2023-01-04 14:43:02,664] TC_01_Loggin - Step 04: Sendkey to UserName = estg3helloo
+<br><br/>
+[INFO ] [2023-01-04 14:43:02,873] TC_01_Loggin - Step 05: Sendkey to PassWord = Abcd1234
+<br><br/>
+[INFO ] [2023-01-04 14:43:03,063] TC_01_Loggin - Step 06: Sendkey to PhoneNumber = 0777888aaa
+<br><br/>
+[INFO ] [2023-01-04 14:43:03,263] TC_01_Loggin - Step 07: Click to Button Register2
+<br><br/>
+[INFO ] [2023-01-04 14:43:04,352] TC_01_Loggin - Step 08: Clear text to UserName
+<br><br/>
+[INFO ] [2023-01-04 14:43:04,494] TC_01_Loggin - Step 09: Clear text to Password
+<br><br/>
+[INFO ] [2023-01-04 14:43:04,659] TC_01_Loggin - Step 010: Clear text to PhoneNumber
+<br><br/>
+[INFO ] [2023-01-04 14:43:04,826] TC_01_Loggin - Step 11: Check Message 'Vui lòng nhập tên đăng nhập'
+<br><br/>
+[INFO ] [2023-01-04 14:43:04,857]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2023-01-04 14:43:04,859] TC_01_Loggin - Step 12: Check Message 'Vui lòng nhập mật khẩu'
+<br><br/>
+[INFO ] [2023-01-04 14:43:04,889]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2023-01-04 14:43:04,889] TC_01_Loggin - Step 13: Check Message 'Vui lòng nhập số điện thoại'
+<br><br/>
+[INFO ] [2023-01-04 14:43:04,923]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2023-01-04 14:43:04,923] TC_01_Loggin - Step 14: Sendkey to UserName = estg3
+<br><br/>
+[INFO ] [2023-01-04 14:43:05,109] TC_01_Loggin - Step 15: Sendkey to PassWord = Abcd12
+<br><br/>
+[INFO ] [2023-01-04 14:43:05,266] TC_01_Loggin - Step 16: Sendkey to PhoneNumber = 077788899
+<br><br/>
+[INFO ] [2023-01-04 14:43:05,428] TC_01_Loggin - Step 17: Check Message 'Vui lòng không nhập ít hơn 6 ký tự'
+<br><br/>
+[INFO ] [2023-01-04 14:43:05,459]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2023-01-04 14:43:05,459] TC_01_Loggin - Step 18: Check Message 'Vui lòng không nhập ít hơn 8 ký tự'
+<br><br/>
+[INFO ] [2023-01-04 14:43:05,490]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2023-01-04 14:43:05,490] TC_01_Loggin - Step 19: Check Message 'Vui lòng không nhập ít hơn 10 chữ số'
+<br><br/>
+[INFO ] [2023-01-04 14:43:05,523]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2023-01-04 14:43:05,523] TC_01_Loggin - Step 20: Clear text to UserName
+<br><br/>
+[INFO ] [2023-01-04 14:43:05,678] TC_01_Loggin - Step 21: Clear text to Password
+<br><br/>
+[INFO ] [2023-01-04 14:43:05,837] TC_01_Loggin - Step 22: Clear text to PhoneNumber
+<br><br/>
+[INFO ] [2023-01-04 14:43:05,991] TC_01_Loggin - Step 23: Sendkey to UserName = estg3@
+<br><br/>
+[INFO ] [2023-01-04 14:43:06,157] TC_01_Loggin - Step 24: Sendkey to PassWord = abcd1234
+<br><br/>
+[INFO ] [2023-01-04 14:43:06,333] TC_01_Loggin - Step 25: Sendkey to PhoneNumber = 7778889990
+<br><br/>
+[INFO ] [2023-01-04 14:43:06,496] TC_01_Loggin - Step 26: Check Message 'Tên đăng nhập không chứa các ký tự đặc biệt'
+<br><br/>
+[INFO ] [2023-01-04 14:43:06,543]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2023-01-04 14:43:06,544] TC_01_Loggin - Step 27: Check Message 'Mật khẩu phải tối thiểu 8 ký tự, có chứa chữ VIẾT HOA và chữ số.'
+<br><br/>
+[INFO ] [2023-01-04 14:43:06,561]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2023-01-04 14:43:06,562] TC_01_Loggin - Step 28: Check Message 'Số điện thoại phải bắt đầu với số 0'
+<br><br/>
+[INFO ] [2023-01-04 14:43:06,590]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2023-01-04 14:43:06,590] TC_01_Loggin - Step 29: Clear text to UserName
+<br><br/>
+[INFO ] [2023-01-04 14:43:06,752] TC_01_Loggin - Step 30: Clear text to Password
+<br><br/>
+[INFO ] [2023-01-04 14:43:06,878] TC_01_Loggin - Step 31: Clear text to PhoneNumber
+<br><br/>
+[INFO ] [2023-01-04 14:43:07,188] TC_01_Loggin - Step 32: Sendkey to UserName = estg36834
+<br><br/>
+[INFO ] [2023-01-04 14:43:07,362] TC_01_Loggin - Step 33: Sendkey to PassWord = Abc9417097
+<br><br/>
+[INFO ] [2023-01-04 14:43:07,511] TC_01_Loggin - Step 34: Sendkey to PhoneNumber = 0909667696
+<br><br/>
+[INFO ] [2023-01-04 14:43:07,511] TC_01_Loggin - Step 35: Check button Register Enable
+<br><br/>
+[INFO ] [2023-01-04 14:43:07,525]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2023-01-04 14:43:07,525] TC_01_Loggin - Step 36: Click to Button Register
+<br><br/>
+[INFO ] [2023-01-04 14:43:08,609] TC_01_Loggin - Step 37: Sendkey to DisplayName = estg36834
+<br><br/>
+[INFO ] [2023-01-04 14:43:09,805] TC_01_Loggin - Step 38: Click to button Confirm
+<br><br/>
+[INFO ] [2023-01-04 14:43:10,894] TC_01_Loggin - Step 39: Check Message 'Tên hiển thị không trùng với tên đăng nhập.'
+<br><br/>
+[INFO ] [2023-01-04 14:43:10,931]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.xo88.info.homepage_with_xo88@45f421c</td></tr>
+</table><p>
+</body>
+</html>

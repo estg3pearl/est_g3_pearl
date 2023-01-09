@@ -1,0 +1,1 @@
+{"uuid":"f182112c-46a9-4c0f-8f30-805d9ebc496f","name":"Xo88","children":["79cc72b0-15bf-4dc6-bb95-3c6aef44d2ae"],"befores":[{"name":"deleteAllFilesInReportNGScreenshot","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1672816070847,"stop":1672816070851}],"afters":[],"links":[],"start":1672816070825,"stop":1672816093951}
