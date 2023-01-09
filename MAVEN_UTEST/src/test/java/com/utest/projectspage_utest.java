@@ -52,13 +52,14 @@ public void TC_01_Check_Filter()
 	projectspage.SelectDropdownOS();
 	
 	log.info("TC_01_Filter - Step 03: Input into textbox OS filter");
-	projectspage.sendkeyToTextboxOS("Adnroid");
+	projectspage.selectItemOSDropdown("iOS");
 	
 	log.info("TC_01_Filter - Step 04: Select dropwn Country filter");
 	projectspage.SelectDropdownCountry();
 	
 	log.info("TC_01_Filter - Step 05: Input into textbox Country filter");
-	projectspage.sendkeyToTextboxCountry("Vietnam");
+	projectspage.selectItemCountryDropdown("Slovakia");
+	
 }
 
 }
