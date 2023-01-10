@@ -2,6 +2,8 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import commons.AbstractPage;
 import pageUIs.LogInPageUI;
+import pageUIs.LoginPageUI;
+import pageUIs.RegisterPageUI;
 
 	public class LogInPageObjects extends AbstractPage  
 	{
@@ -39,7 +41,10 @@ import pageUIs.LogInPageUI;
 		{
 			waitToElementClickable(driver, LogInPageUI.SIGN_IN_BUTTON );
 			clickToElement(driver, LogInPageUI.SIGN_IN_BUTTON);
-			sleepInSecond(1);
 		}
-		
+		public String getInvalidUsernameOrPasswordMessage() 
+		{
+			waitToElementVisuble(driver, LogInPageUI.INVALID_USERNAME_PASSWORD_MESSAGE);
+			return getElementText(driver, LogInPageUI.INVALID_USERNAME_PASSWORD_MESSAGE);
+		}
 }

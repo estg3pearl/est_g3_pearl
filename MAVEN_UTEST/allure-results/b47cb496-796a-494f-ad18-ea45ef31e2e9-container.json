@@ -1,0 +1,1 @@
+{"uuid":"b47cb496-796a-494f-ad18-ea45ef31e2e9","name":"com.utest.loginpage_utest","children":["684e5782-7cfa-422f-92a7-c65268ff8b09"],"befores":[{"name":"beforeClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1673342751386,"stop":1673342757341}],"afters":[],"links":[],"start":1673342751359,"stop":1673342765270}
