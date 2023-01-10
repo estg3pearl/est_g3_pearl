@@ -55,6 +55,10 @@ public void TC_01_Check_Enter_LogInPage()
 	log.info("TC_01_Login - Step 04: Check Remember me");
 	loginpage.checkToRememberMe();
 	
+	log.info("TC_01_Login - Step 05: Click button Sign in");
+	loginpage.clickToButtonSignIn();
 	
+	log.info("TC_01_Login - Checkpoint: Check message 'Invalid username or password.'");
+	verifyTrue(loginpage.getInvalidUsernameOrPasswordMessage().contains("Invalid username or password."));
 }
 }
