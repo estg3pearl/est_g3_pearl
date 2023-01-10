@@ -383,6 +383,19 @@ public class AbstractPage {
 		clickToElement(driver, AbstractPageUI.DYNAMIC_LINK, pageName);
 	}
 	
+	public void SplitURL(String[] args, String URL)
+	{
+		String[] arStr = URL.split("\\/");
+		for (String item : arStr)
+		{
+			System.out.println(item);
+		}
+	}
+	public void GoTo(WebDriver driver, String URL)
+	{
+		;
+	}
+	
 	private WebDriverWait explicitWait;
 	private JavascriptExecutor jsExecutor;
 	private WebElement element;
