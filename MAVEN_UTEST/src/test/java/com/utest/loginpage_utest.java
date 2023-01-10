@@ -20,16 +20,18 @@ import org.testng.annotations.Test;
 
 import commons.AbstractTest;
 import pageObjects.HomePageObjects;
+import pageObjects.LogInPageObjects;
 import pageObjects.PageGeneratorManager;
 import pageUIs.HomePageUI;
+import pageUIs.LogInPageUI;
 import commons.AbstractTest;
 
-public class homepage_utest extends AbstractTest
+public class loginpage_utest extends AbstractTest
 {
 	private static final String String = null;
 	WebDriver driver;
 	HomePageObjects homepage;
-	
+	LogInPageObjects loginpage;
 	@Parameters({ "browser"})
 	@BeforeClass
 	public void beforeClass(String browserName) {
@@ -37,11 +39,22 @@ public class homepage_utest extends AbstractTest
 		driver.get("https://www.utest.com/");
 	}
 @Test
-public void TC_01_Check_Enter_ProjectsPage()
+public void TC_01_Check_Enter_LogInPage()
 {
 	homepage = PageGeneratorManager.getHomePage(driver);
-	log.info("TC_01_HomePage - Step 01: Click to Projects");
-	homepage.clickToButtonProjects();
-	}
-
+	log.info("TC_01_Login - Step 01: Click to Log In button from Home page");
+	homepage.clickToButtonLogIn();
+	
+	loginpage = PageGeneratorManager.getLogInPage(driver);
+	log.info("TC_01_Login - Step 02: Enter email");
+	loginpage.sendKeyToEmail("ngocleedng@gmail.com");
+	
+	log.info("TC_01_Login - Step 03: Enter password");
+	loginpage.sendKeyToPassword("Eb$co2023@");
+	
+	log.info("TC_01_Login - Step 04: Check Remember me");
+	loginpage.checkToRememberMe();
+	
+	
+}
 }

@@ -11,5 +11,7 @@ public class PageGeneratorManager {
 	public static ProjectsPageObjects getProjectsPage(WebDriver driver) {
 		return new ProjectsPageObjects(driver);
 	}
-
+	public static LogInPageObjects getLogInPage(WebDriver driver) {
+		return new LogInPageObjects(driver);
+	}
 }

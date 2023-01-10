@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-09T08:32:39Z" name="uTest" finished-at="2023-01-09T08:32:53Z" duration-ms="14282">
+  <suite started-at="2023-01-10T09:23:08Z" name="uTest" finished-at="2023-01-10T09:23:20Z" duration-ms="12838">
     <groups>
     </groups>
-    <test started-at="2023-01-09T08:32:39Z" name="Run on Chrome" finished-at="2023-01-09T08:32:53Z" duration-ms="14282">
-      <class name="com.utest.projectspage_utest">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.utest.projectspage_utest@4d2a1da3]" started-at="2023-01-09T08:32:39Z" name="beforeClass" finished-at="2023-01-09T08:32:45Z" duration-ms="6109" status="PASS">
+    <test started-at="2023-01-10T09:23:08Z" name="Run on Chrome" finished-at="2023-01-10T09:23:20Z" duration-ms="12838">
+      <class name="com.utest.loginpage_utest">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.utest.loginpage_utest@557286ad]" started-at="2023-01-10T09:23:08Z" name="beforeClass" finished-at="2023-01-10T09:23:14Z" duration-ms="6656" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01_Check_Filter()[pri:0, instance:com.utest.projectspage_utest@4d2a1da3]" started-at="2023-01-09T08:32:45Z" name="TC_01_Check_Filter" finished-at="2023-01-09T08:32:53Z" duration-ms="8087" status="PASS">
+        <test-method signature="TC_01_Check_Enter_LogInPage()[pri:0, instance:com.utest.loginpage_utest@557286ad]" started-at="2023-01-10T09:23:14Z" name="TC_01_Check_Enter_LogInPage" finished-at="2023-01-10T09:23:20Z" duration-ms="6094" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Check_Filter -->
-      </class> <!-- com.utest.projectspage_utest -->
+        </test-method> <!-- TC_01_Check_Enter_LogInPage -->
+      </class> <!-- com.utest.loginpage_utest -->
     </test> <!-- Run on Chrome -->
   </suite> <!-- uTest -->
 </testng-results>

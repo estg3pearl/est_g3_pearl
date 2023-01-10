@@ -10,12 +10,12 @@
   <test thread-count="5" name="Run on Chrome(failed)">
     <parameter name="browser" value="chrome_ui"/>
     <classes>
-      <class name="com.utest.projectspage_utest">
+      <class name="com.utest.loginpage_utest">
         <methods>
-          <include name="TC_01_Check_Filter"/>
+          <include name="TC_01_Check_Enter_LogInPage"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.utest.projectspage_utest -->
+      </class> <!-- com.utest.loginpage_utest -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
 </suite> <!-- Failed suite [uTest] -->
