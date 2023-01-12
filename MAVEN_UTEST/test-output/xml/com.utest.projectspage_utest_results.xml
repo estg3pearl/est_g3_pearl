@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="7,592">
+           time="8,433">
   <properties />
   
   
-            <testcase name="TC_01_Check_Filter" time="7,592" classname="com.utest.projectspage_utest" />
+            <testcase name="TC_01_Check_Filter" time="8,433" classname="com.utest.projectspage_utest" />
       
 </testsuite>

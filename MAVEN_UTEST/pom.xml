@@ -12,9 +12,9 @@
 		<!-- Encoding for Report -->
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<!-- Compiler Code with Java 8 -->
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven.compiler.source>1.8</maven.compiler.source>
+		<!-- Compiler Code with Java 11 -->
+		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
 
 		<!-- Global variable for dependencies -->
 		<webdriver.version>3.141.59</webdriver.version>
@@ -157,11 +157,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.22.2</version>
+				<version>3.0.0-M5</version>
 				<configuration>
 					<!-- Run TestNG xml file -->
 					<suiteXmlFiles>
-						<file>src/test/resources/run_xo88_HomePage.xml</file>
+						<file>src/test/resources/run_uTest_Loginpage.xml</file>
 					</suiteXmlFiles>
 
 					<!-- Argument -->

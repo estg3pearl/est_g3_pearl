@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="7,121">
+           time="7,164">
   <properties />
   
   
-            <testcase name="TC_01_Check_Enter_LogInPage" time="7,121" classname="com.utest.loginpage_utest" />
+            <testcase name="TC_01_Check_Enter_LogInPage" time="7,164" classname="com.utest.loginpage_utest" />
       
 </testsuite>

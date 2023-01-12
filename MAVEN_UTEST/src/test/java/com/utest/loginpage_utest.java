@@ -39,7 +39,7 @@ public class loginpage_utest extends AbstractTest
 		driver.get("https://www.utest.com/");
 	}
 @Test
-public void TC_01_Check_Enter_LogInPage()
+public void TC_01_Check_LogIn_Unsuccessful()
 {
 	homepage = PageGeneratorManager.getHomePage(driver);
 	log.info("TC_01_Login - Step 01: Click to Log In button from Home page");
@@ -60,5 +60,15 @@ public void TC_01_Check_Enter_LogInPage()
 	
 	log.info("TC_01_Login - Checkpoint: Check message 'Invalid username or password.'");
 	verifyTrue(loginpage.getInvalidUsernameOrPasswordMessage().contains("Invalid username or password."));
+}
+public void TC_02_Check_LogIn_Successful()
+{
+	log.info("TC_01_Login - Step 01: Enter email");
+	loginpage.sendKeyToEmail("ngocleedng@gmail.com");
+	
+	log.info("TC_01_Login - Step 02: Enter password");
+	loginpage.sendKeyToPassword("Eb$co2024@");
+	
+	
 }
 }

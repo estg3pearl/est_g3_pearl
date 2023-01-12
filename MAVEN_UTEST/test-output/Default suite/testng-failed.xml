@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.utest.projectspage_utest">
+      <class name="com.utest.loginpage_utest">
         <methods>
-          <include name="TC_01_Check_Filter"/>
+          <include name="TC_01_Check_Enter_LogInPage"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.utest.projectspage_utest -->
+      </class> <!-- com.utest.loginpage_utest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
